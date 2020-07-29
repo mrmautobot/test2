@@ -7,7 +7,7 @@ const app = express()
 const PORT = process.env.PORT || 8080
 //สร้าง route ขึ้นมา 1 ตัว โดยกำหนดให้ path คือ / หรือ index ของ host นั่นเอง
 //จากนั้นให้กำหนด response แสดงคำว่า Hello World
-app.get('/', (req, res) => res.send('Hello World'))
+app.get('/test2', (req, res) => res.send('Hello World'))
 //run web server ที่เราสร้างไว้ โดยใช้ PORT ที่เรากำหนดไว้ในตัวแปร PORT
 app.listen(PORT, () => {
     //หากทำการ run server สำเร็จ ให้แสดงข้อความนี้ใน cmd หรือ terminal
